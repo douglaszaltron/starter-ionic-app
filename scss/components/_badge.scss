@@ -1,0 +1,27 @@
+.button .badge-header {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  left: inherit;
+}
+
+.badge {
+  padding: 2px 6px;
+
+  &.badge-circled {
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 4px;
+    line-height: 14px;
+    text-align: center;
+
+    .icon {
+      height: 14px;
+      width: 14px;
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<ion-view view-title="List">
+  <ion-nav-title>
+    <ion-title>List</ion-title>
+  </ion-nav-title>
+  <ion-content>
+    <ion-refresher on-refresh="vm.findAllSamples()" class="item-refresher-container"></ion-refresher>
+    <ion-list ng-if="vm.items.$resolved && !vm.items.$error && vm.items.total" ng-hide="!vm.items.$resolved" ng-repeat="(category, items) in vm.items.categories">
+      <ion-item class="item-divider item-borderless help-text-uppercase">{{ category }}</ion-item>
+      <ion-item ng-repeat="item in items" class="item-light item-icon-stable item-icon-left">
+        <ui-icon props="stable" name="{{ item.icon }}"></ui-icon>
+        <span>{{ item.title }}</span>
+        <div class="item-note">{{ item.note }}</div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

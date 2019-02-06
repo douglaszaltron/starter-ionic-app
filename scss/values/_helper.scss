@@ -1,0 +1,276 @@
+.help-padding-vertical {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+.help-padding-horizontal {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+.help-padding-none {
+  padding: 0 !important;
+}
+
+.help-padding-top-4 {
+  padding-top: 4px !important;
+}
+
+.help-padding-top-8 {
+  padding-top: 8px !important;
+}
+
+.help-padding-top-16 {
+  padding-top: 16px !important;
+}
+
+.help-padding-top-24 {
+  padding-top: 24px !important;
+}
+
+.help-padding-top-32 {
+  padding-top: 32px !important;
+}
+
+.help-padding-bottom-4 {
+  padding-bottom: 4px !important;
+}
+
+.help-padding-bottom-8 {
+  padding-bottom: 8px !important;
+}
+
+.help-padding-bottom-16 {
+  padding-bottom: 16px !important;
+}
+
+.help-padding-bottom-24 {
+  padding-bottom: 24px !important;
+}
+
+.help-padding-bottom-32 {
+  padding-bottom: 32px !important;
+}
+
+.help-margin-vertical {
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+}
+
+.help-margin-horizontal {
+  margin-left: 8px !important;
+  margin-right: 8px !important;
+}
+
+.help-margin-none {
+  margin: 0 !important;
+}
+
+.help-margin-top-4 {
+  margin-top: 4px !important;
+}
+
+.help-margin-top-8 {
+  margin-top: 8px !important;
+}
+
+.help-margin-top-16 {
+  margin-top: 16px !important;
+}
+
+.help-margin-top-24 {
+  margin-top: 24px !important;
+}
+
+.help-margin-top-32 {
+  margin-top: 32px !important;
+}
+
+.help-margin-bottom-4 {
+  margin-bottom: 4px !important;
+}
+
+.help-margin-bottom-8 {
+  margin-bottom: 8px !important;
+}
+
+.help-margin-bottom-16 {
+  margin-bottom: 16px !important;
+}
+
+.help-margin-bottom-24 {
+  margin-bottom: 24px !important;
+}
+
+.help-margin-bottom-32 {
+  margin-bottom: 32px !important;
+}
+
+.help-border-radius {
+  border-radius: 4px;
+}
+
+.help-border-rounded {
+  border-radius: 25px;
+}
+
+.help-border-circled {
+  border-radius: 50%;
+}
+
+.help-border-dashed {
+  border-style: dashed;
+}
+
+.help-border {
+  border-width: 1px !important;
+}
+
+.help-border-none {
+  border-width: 0 !important;
+}
+
+.help-border-top {
+  border-top-width: 1px !important;
+}
+
+.help-border-bottom {
+  border-bottom-width: 1px !important;
+}
+
+.help-border-left {
+  border-left-width: 1px !important;
+}
+
+.help-border-right {
+  border-right-width: 1px !important;
+}
+
+.help-text-justify {
+  text-align: justify !important;
+}
+
+.help-text-indent {
+  text-indent: 24px !important;
+}
+
+.help-text-center {
+  text-align: center !important;
+}
+
+.help-text-left {
+  text-align: left !important;
+}
+
+.help-text-right {
+  text-align: right !important;
+}
+
+.help-text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.help-text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.help-text-capitalize {
+  text-transform: capitalize !important;
+}
+
+.help-text-line {
+  text-decoration: line-through;
+}
+
+.help-font-italic {
+  font-style: italic !important;
+}
+
+.help-font-bold {
+  font-weight: 600 !important;
+}
+
+.help-font-size-12 {
+  font-size: 12px !important;
+}
+
+.help-font-size-14 {
+  font-size: 14px !important;
+}
+
+.help-font-size-16 {
+  font-size: 16px !important;
+}
+
+.help-font-size-24 {
+  font-size: 24px !important;
+}
+
+.help-font-size-36 {
+  font-size: 36px !important;
+}
+
+.help-line-height-12 {
+  line-height: 12px !important;
+}
+
+.help-line-height-14 {
+  line-height: 14px !important;
+}
+
+.help-line-height-16 {
+  line-height: 16px !important;
+}
+
+.help-line-height-24 {
+  line-height: 24px !important;
+}
+
+.help-line-height-36 {
+  line-height: 36px !important;
+}
+
+.help-placeholder-center {
+  input::placeholder {
+    text-align: center;
+  }
+}
+
+.help-position-relative {
+  position: relative;
+}
+
+.help-position-absolute {
+  position: absolute;
+}
+
+.help-position-static {
+  position: static;
+}
+
+.help-flex-center {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+@media (orientation: portrait) {
+  .help-portrait-hide {
+    display: none;
+  }
+
+  .help-portrait-show {
+    display: block;
+  }
+}
+
+@media (orientation: landscape) {
+  .help-landscape-hide {
+    display: none;
+  }
+
+  .help-landscape-show {
+    display: block;
+  }
+}

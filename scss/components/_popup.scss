@@ -1,0 +1,79 @@
+$popup-backdrop-bg-color: rgba(0, 0, 0, 0.12) !default;
+
+.popup-container {
+  background-color: $popup-backdrop-bg-color;
+
+  &.popup-container-expanded {
+    .popup {
+      width: calc(100% - 16px);
+    }
+  }
+
+  &.popup-container-picker {
+    .popup {
+      .popup-body {
+        padding: 2px 0;
+        height: 320px;
+        min-height: 320px;
+        overflow: hidden;
+        .list {
+          height: 320px;
+        }
+      }
+    }
+  }
+
+  .popup {
+    overflow: hidden;
+    width: 280px;
+    padding: 0;
+    border-radius: 10px;
+    background-color: #ffffff !important;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12) !important;
+
+    .popup-head {
+      border-width: 0;
+      padding: 16px;
+      padding-bottom: 8px;
+      text-align: inherit;
+
+      .popup-title {
+        font-size: 16px;
+        text-align: inherit;
+      }
+    }
+
+    .popup-body {
+      font-size: 14px;
+      min-height: 58px;
+      padding: 8px 16px;
+    }
+
+    .popup-buttons {
+      border-width: 0;
+      padding: 0;
+      height: 45px;
+      min-height: 45px;
+
+      .button {
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 0;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    .button:after {
+      position: static !important;
+      content: initial !important;
+    }
+  }
+}
+
+.popup-open {
+  .scroll-content {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}

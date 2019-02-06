@@ -1,0 +1,29 @@
+.item-modal-sheet {
+  align-items: flex-start;
+  border-radius: 24px;
+  background: #fff;
+  margin-top: 58px;
+  padding: 20px;
+  z-index: 1004;
+
+  .item-header-modal {
+    border-width: 0;
+    background-image: none;
+
+    .buttons {
+      padding: 0 6px;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.87);
+
+      &.title-center {
+        right: 0 !important;
+        left: 0 !important;
+      }
+    }
+  }
+}

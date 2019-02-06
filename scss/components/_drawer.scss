@@ -1,0 +1,130 @@
+.item-drawer-item {
+  font-size: 16px;
+  &.item-text-center {
+    text-align: center;
+    .item-content {
+      padding: 16px;
+    }
+  }
+
+  &.item-icon-left {
+    .item-content {
+      padding-left: 72px;
+    }
+    .icon {
+      font-size: 24px;
+      color: rgba(0, 0, 0, 0.54);
+    }
+  }
+  .item-content {
+    &:active,
+    &.active,
+    &.activated {
+      background-color: #fafafa;
+      .icon {
+        color: $positive;
+      }
+      color: $positive;
+    }
+  }
+}
+
+.item-drawer-divider {
+  border-top-width: 1px !important;
+  margin-top: 1px;
+  padding-top: 0;
+  padding-bottom: 1px;
+  background-color: transparent;
+}
+
+.item-drawer-shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.item-drawer-scroll {
+  overflow: hidden !important;
+}
+
+.item-drawer-header {
+  bottom: 0;
+  width: 100%;
+  padding: 0 49px 16px 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  font-size: 14px;
+  &.item-icon-right {
+    ion-icon:last-child .icon {
+      font-size: 22px;
+    }
+  }
+  &.item-icon-left {
+    padding: 0 49px 16px 49px;
+    ion-icon:first-child .icon {
+      font-size: 22px !important;
+    }
+  }
+  &.item-icon-circled {
+    ion-icon:first-child .icon:before {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: #007dff;
+      color: #fff;
+    }
+  }
+  &.item-icon-rounded {
+    ui-icon:last-child .icon {
+      height: 24px;
+      width: 24px;
+      font-size: 16px !important;
+      background: $item-light-bg;
+      color: $item-light-text;
+      border-radius: 50%;
+      margin-top: 16px;
+    }
+  }
+}
+
+.item-drawer-avatar {
+  height: 48px;
+  margin-left: 16px;
+  margin-bottom: 8px;
+  display: block;
+  img:first-child {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+  }
+  &.item-drawer-avatar-border {
+    img:first-child {
+      border-width: 2px;
+      border-style: solid;
+      padding: 2px;
+    }
+  }
+}
+
+.item-drawer-container {
+  margin: -1px;
+  margin-bottom: 8px;
+  padding: 0;
+  background-size: 100%;
+
+  &.item-drawer-center {
+    text-align: center;
+
+    .item-drawer-avatar,
+    .item-drawer-header {
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}

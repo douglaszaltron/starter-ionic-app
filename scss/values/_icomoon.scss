@@ -1,0 +1,76 @@
+$ion-extend-usb: "\e901";
+$ion-extend-terms: "\e902";
+$ion-extend-serve: "\e903";
+$ion-extend-privacy: "\e904";
+$ion-extend-network: "\e905";
+$ion-extend-build: "\e907";
+$ion-extend-menu: "\e900";
+$ion-extend-chat: "\f10d";
+
+@font-face {
+  font-family: "#{$icomoon-font-family}";
+  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?w1ov7p")
+      format("truetype"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.woff?w1ov7p")
+      format("woff"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.svg?w1ov7p##{$icomoon-font-family}")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ion-extend-"],
+[class*=" ion-extend-"] {
+  font-family: "#{$icomoon-font-family}" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ion-extend-usb {
+  &:before {
+    content: $ion-extend-usb;
+  }
+}
+.ion-extend-terms {
+  &:before {
+    content: $ion-extend-terms;
+  }
+}
+.ion-extend-serve {
+  &:before {
+    content: $ion-extend-serve;
+  }
+}
+.ion-extend-privacy {
+  &:before {
+    content: $ion-extend-privacy;
+  }
+}
+.ion-extend-network {
+  &:before {
+    content: $ion-extend-network;
+  }
+}
+.ion-extend-build {
+  &:before {
+    content: $ion-extend-build;
+  }
+}
+.ion-extend-menu {
+  &:before {
+    content: $ion-extend-menu;
+  }
+}
+.ion-extend-chat {
+  &:before {
+    content: $ion-extend-chat;
+  }
+}

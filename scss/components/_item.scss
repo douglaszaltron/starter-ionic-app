@@ -1,0 +1,135 @@
+.item {
+  &.item-base {
+    background-color: $base-background-color;
+
+    &.item-complex > .item-content {
+      background-color: $base-background-color;
+    }
+  }
+
+  &.item-clear {
+    background-color: transparent;
+
+    &.item-complex > .item-content {
+      background-color: transparent;
+    }
+  }
+}
+
+.item-divider {
+  padding-top: 16px;
+  background-color: $base-background-color;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: inherit;
+}
+
+.item-icon-left .icon-avatar-rounded:before,
+.item-icon-right .icon-avatar-rounded:before {
+  display: block;
+  text-align: center;
+  height: 32px;
+  width: 32px;
+  padding: 8px;
+  font-size: 16px !important;
+  color: $item-positive-text;
+  border-radius: 50%;
+}
+
+.item-icon-left .icon-avatar-rounded.secondary:before,
+.item-icon-right .icon-avatar-rounded.secondary:before {
+  background: $item-balanced-bg;
+  color: $item-balanced-text;
+}
+
+.item-icon-left .icon,
+.item-icon-right .icon {
+  font-size: 26px;
+}
+
+.item-icon-left {
+  padding-left: 62px;
+}
+
+.item-input-double {
+  height: 65px !important;
+}
+
+.item-checkbox-stacked {
+  padding: 24px 16px 24px 60px;
+}
+
+.input-label {
+  display: flow-root;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item {
+  h2 {
+    font-size: 16px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 4px;
+  }
+
+  p {
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgba(0, 0, 0, 0.54);
+  }
+}
+
+.item-select select {
+  min-width: 65%;
+}
+
+.item {
+  &.has-subtitle {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    p {
+      margin: 0 0 1px 0;
+    }
+  }
+}
+
+.platform-ios {
+  .item-header-modal {
+    .buttons {
+      margin-left: 2px;
+    }
+  }
+}
+
+.platform-ios {
+  .item-divider {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
+
+.item-icon-left.item-icon-right ui-icon:last-child .icon {
+  right: 0;
+}
+
+.item-icon-left.item-icon-right ui-icon:first-child .icon {
+  left: 11px;
+}
+
+.item-icon-left.item-icon-right .icon-accessory {
+  color: #ccc;
+  font-size: 16px;
+}
+
+.platform-android {
+  .icon-accessory {
+    display: none;
+  }
+}

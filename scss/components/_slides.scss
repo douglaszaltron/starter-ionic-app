@@ -1,0 +1,16 @@
+ion-slides {
+  height: 162px;
+  background-size: cover;
+}
+
+ion-slides .box {
+  margin: 0;
+  height: 100%;
+  background: #fff no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+ion-slides .swiper-pagination-bullet {
+  background-color: $positive-color;
+}

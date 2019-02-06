@@ -1,0 +1,36 @@
+.item-avatar-picture-content {
+  margin-bottom: 0;
+
+  .item-avatar-picture-middle {
+    background-color: $light;
+
+    .item-avatar-picture-image {
+      position: relative;
+      height: 155px;
+      width: 155px;
+      border-radius: 50%;
+      background-color: $stable;
+    }
+  }
+
+  .item-avatar-picture-body {
+    background-color: $light;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .item-avatar-picture-button {
+    width: 100%;
+    padding: 8px 16px;
+
+    .button-clear,
+    .button-icon {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .item-avatar-picture-button {
+    border-top-width: 0;
+  }
+}

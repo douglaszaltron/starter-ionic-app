@@ -1,0 +1,89 @@
+.item-radio,
+.radio-icon {
+  &.radio-icon-off {
+    visibility: visible;
+    color: rgba(0, 0, 0, 0.54);
+  }
+}
+
+.item-radio input {
+  &:checked + .radio-content .item-content {
+    background: inherit;
+  }
+
+  &:checked + .radio-content .radio-icon-on {
+    visibility: visible;
+  }
+
+  &:checked + .radio-content .radio-icon-off {
+    visibility: hidden;
+  }
+}
+
+.journal-item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-width: 0;
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin: -1px;
+  padding: 0;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.journal-item-radio {
+  padding: 0;
+  width: 100%;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.journal-item-radio .journal-item-content {
+  width: 100%;
+  text-align: center;
+}
+
+.journal-radio-content {
+  text-align: center;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.journal-item-radio .journal-radio-icon {
+  height: 48px;
+  width: 48px;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.journal-item-radio input {
+  position: absolute;
+  left: -9999px;
+
+  &:checked + .journal-radio-content .journal-radio-icon {
+    color: $positive;
+  }
+}
+
+.journal-item-radio input {
+  &:checked + .journal-radio-content {
+    background-color: $positive;
+    color: #ffffff;
+
+    .journal-radio-icon {
+      color: #ffffff;
+    }
+  }
+}
+
+.journal-item-radio input {
+  position: absolute;
+  left: -9999px;
+}

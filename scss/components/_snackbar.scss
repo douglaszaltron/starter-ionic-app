@@ -1,0 +1,99 @@
+$snackbar-bg-color: #313131 !default;
+$snackbar-color-text: #ffffff !default;
+$snackbar-button-text: $button-positive-bg !default;
+
+.item-snackbar-container {
+  @include translate3d(0, 100%, 0);
+  @include transition(all cubic-bezier(0.36, 0.66, 0.04, 1) 500ms);
+  position: absolute;
+  bottom: 0;
+  z-index: 1000;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &.activated,
+  &.active {
+    @include translate3d(0, 0, 0);
+  }
+
+  &.item-snackbar-up {
+    @include translate3d(0, 0, 0);
+  }
+
+  .item-snackbar-wrapper {
+    background: $snackbar-bg-color;
+    color: $snackbar-color-text;
+    font-size: 14px;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 22px;
+    padding: 6px 24px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &.item-snackbar-wrap {
+      flex-wrap: wrap;
+    }
+
+    .item-snackbar-message {
+      padding: 6px 0;
+      margin: 0;
+    }
+
+    .item-snackbar-action-wrapper {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      padding-left: 24px;
+      margin-right: -8px;
+      text-align: right;
+
+      .item-snackbar-action {
+        padding: 7px 8px;
+        min-width: 64px;
+        font-size: 0.8125rem;
+        min-height: 32px;
+
+        .item-snackbar-button {
+          border-radius: 2px;
+          box-sizing: border-box;
+          color: $snackbar-button-text;
+          font-weight: 500;
+          height: 100%;
+          font-size: 12px;
+          max-height: inherit;
+          display: block;
+          text-decoration: none;
+          text-transform: uppercase;
+          opacity: 1;
+
+          &:hover {
+            text-decoration: none;
+          }
+
+          &.active,
+          &.activated {
+            opacity: 0.72;
+            transition: opacity 0.1s;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .item-snackbar-wrapper {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    min-width: 0;
+    max-width: 568px;
+    box-sizing: border-box;
+  }
+}

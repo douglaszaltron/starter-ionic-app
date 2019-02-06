@@ -1,0 +1,72 @@
+// Colors
+$positive-color: #387ef5 !default;
+$positive-color-dark: darken($positive-color, 15) !default;
+$positive-color-light: lighten($positive-color, 10) !default;
+$positive-text-color: #ffffff !default;
+
+$calm-color: #11c1f3 !default;
+$calm-color-dark: darken($calm-color, 15) !default;
+$calm-color-light: lighten($calm-color, 10) !default;
+$calm-text-color: #ffffff !default;
+
+$balanced-color: #33cd5f !default;
+$balanced-color-dark: darken($balanced-color, 5) !default;
+$balanced-color-light: lighten($balanced-color, 10) !default;
+$balanced-text-color: #ffffff !default;
+
+$energized-color: #ffc900 !default;
+$energized-color-dark: darken($energized-color, 5) !default;
+$energized-color-light: lighten($energized-color, 10) !default;
+$energized-text-color: #ffffff !default;
+
+$assertive-color: #ef473a !default;
+$assertive-color-dark: darken($assertive-color, 5) !default;
+$assertive-color-light: lighten($assertive-color, 10) !default;
+$assertive-text-color: #ffffff !default;
+
+$royal-color: #886aea !default;
+$royal-color-dark: darken($royal-color, 5) !default;
+$royal-color-light: lighten($royal-color, 10) !default;
+$royal-text-color: #ffffff !default;
+
+// Variables
+$light: #ffffff !default;
+$stable: #f8f8f8 !default;
+
+$positive: $positive-color !default;
+$calm: $calm-color !default;
+$balanced: $balanced-color !default;
+$energized: $energized-color !default;
+$assertive: $assertive-color !default;
+$royal: $royal-color !default;
+
+// Base
+$base-color: rgba(0, 0, 0, 0.87) !default;
+$base-background-color: #f5f7fa !default;
+
+// Ionic
+$modal-bg-color: $base-background-color !default;
+$menu-side-shadow: initial !default;
+$spinner-width: 48px !default;
+$spinner-height: 48px !default;
+$bar-height: 56px !default;
+$bar-footer-height: 56px !default;
+$bar-light-text: $positive-color !default;
+$item-light-text: #000000 !default;
+$item-default-bg: $base-background-color !default;
+$item-default-active-bg: rgba(0, 0, 0, 0.012) !default;
+$button-bar-button-height: 46px !default;
+$button-bar-button-icon-size: 18px !default;
+$button-large-icon-size: 24px !default;
+$input-label-color: $base-color !default;
+$input-color-placeholder: rgba(0, 0, 0, 0.52) !default;
+$input-bg-disabled: rgba(0, 0, 0, 0.12) !default;
+$grid-padding-width: 16px !default;
+
+// Icons
+$ionicons-font-family: "ionicons" !default;
+$ionicons-version: "4.1.1" !default;
+$ionicons-font-path: "../assets/fonts/ionicons" !default;
+
+$icomoon-font-family: "icomoon" !default;
+$icomoon-font-path: "../assets/fonts/icomoon" !default;

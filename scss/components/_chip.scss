@@ -1,0 +1,79 @@
+.item-scroll-chip {
+  height: 52px;
+  max-height: 52px;
+  overflow: hidden;
+}
+
+.item-chip-container {
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+  margin: 0;
+  padding: 8px;
+  height: 52px;
+  width: max-content;
+
+  .item-chip {
+    margin: 2px 4px;
+    height: 32px;
+    border-radius: 16px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.87);
+    background: #e0e0e0;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-self: center;
+    align-self: center;
+    font-weight: normal;
+    vertical-align: middle;
+    box-sizing: border-box;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &.active,
+    &.activated {
+      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+        0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+      background-color: rgb(197, 197, 197);
+    }
+
+    .item-chip-label {
+      margin: 0 12px;
+      padding: 0.5em 0;
+      display: block;
+      overflow: hidden;
+      -webkit-flex: 1;
+      flex: 1;
+      font-size: inherit;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      text-transform: uppercase;
+    }
+
+    .item-chip-picture {
+      width: 32px;
+      color: #616161;
+      height: 32px;
+      font-size: 1rem;
+      margin-right: -4px;
+      padding: 5px;
+      background: #ffffff;
+      border-radius: 16px;
+
+      img:first-child {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        object-fit: cover;
+        font-size: 24px;
+        user-select: none;
+        flex-shrink: 0;
+        display: inline-block;
+      }
+    }
+  }
+}

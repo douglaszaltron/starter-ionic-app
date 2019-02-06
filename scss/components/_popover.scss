@@ -1,0 +1,76 @@
+$popover-backdrop-bg-color: rgba(0, 0, 0, 0.12) !default;
+
+.popover {
+  opacity: 1;
+  width: 280px;
+  margin-left: -140px;
+  border-radius: 2px;
+  background-color: #ffffff !important;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12) !important;
+
+  .bar-header {
+    border-bottom-width: 0;
+    background-image: inherit;
+
+    .title {
+      margin: 0 16px;
+    }
+  }
+
+  .popover-buttons {
+    border-width: 0;
+    padding: 0 11px 0 0;
+    min-height: inherit;
+
+    .button {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .button:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.platform-ios,
+.platform-android {
+  .popover {
+    .scroll-content {
+      border-radius: 0;
+    }
+  }
+
+  .popover-backdrop {
+    &.active {
+      background: rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  .popover-arrow {
+    display: block;
+  }
+}
+
+.popover-open {
+  .popover {
+    opacity: 1;
+  }
+}
+
+.popover.popover-fit {
+  height: auto;
+
+  .scroll-content {
+    position: relative;
+    display: block;
+    max-height: $popover-height;
+  }
+}
+
+.popover-open {
+  .scroll-content {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}

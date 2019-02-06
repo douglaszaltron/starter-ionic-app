@@ -1,0 +1,29 @@
+.bar-header {
+  .button-icon-vector {
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+}
+
+.nav-bar-has-subheader {
+  .bar {
+    background-image: none;
+  }
+
+  .bar-header {
+    border-width: 0;
+  }
+}
+
+.item-header-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    max-height: 40px;
+  }
+}
+
+.item-header-shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}

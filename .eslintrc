@@ -1,0 +1,11 @@
+{
+  "plugins": [
+    "prettier"
+  ],
+  "extends": [
+    "angular"
+  ],
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}

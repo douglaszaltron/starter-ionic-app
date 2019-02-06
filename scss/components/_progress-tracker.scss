@@ -1,0 +1,71 @@
+.item-progress-tracker-container {
+  padding: 8px;
+  box-shadow: 0 2px 2px 0 rgba(204, 204, 204, 1);
+}
+
+.item-progress-tracker {
+  list-style: none;
+  margin: 72dp 0;
+  padding: 2px;
+  display: flex;
+  width: 100%;
+  user-select: none;
+  cursor: default;
+  overflow: hidden;
+}
+
+.item-progress-tracker li {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.item-progress-tracker li:last-of-type {
+  flex: 0 0 auto;
+}
+
+.item-progress-tracker li.active,
+.item-progress-tracker li.complete,
+.item-progress-tracker li.done {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.item-progress-tracker li.complete .item-progress-tracker-circle {
+  background: $positive-color;
+}
+
+.item-progress-tracker li.active .item-progress-tracker-circle,
+.item-progress-tracker li.done .item-progress-tracker-circle {
+  background: $positive-color;
+}
+
+.item-progress-tracker li .item-progress-tracker-circle {
+  line-height: 42px;
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  margin: 0 auto;
+  cursor: pointer;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 100px;
+  background: #989898;
+  font-size: 16px;
+}
+
+.item-progress-tracker li .item-progress-tracker-connector {
+  height: 1px;
+  background: #dddddd;
+  flex: 1;
+  margin: -5px 8px 0 8px;
+}
+
+.item-progress-tracker-bar {
+  padding: 5px;
+
+  .buttons > .button {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+}

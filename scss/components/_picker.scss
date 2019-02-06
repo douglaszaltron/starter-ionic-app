@@ -1,0 +1,31 @@
+.item {
+  &.item-input {
+    &.item-picker {
+      ui-picker {
+        min-width: 65%;
+        input {
+          background-color: #fff;
+          text-align: right;
+          padding: 0 48px 0 16px;
+          &::placeholder {
+            color: #444;
+            text-align: right;
+          }
+        }
+      }
+    }
+    &.item-stacked-label {
+      ui-picker {
+        input {
+          text-align: left;
+          padding: 4px 8px 3px 0;
+          padding-top: 2px;
+          padding-left: 0;
+          &::placeholder {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}

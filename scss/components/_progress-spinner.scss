@@ -1,0 +1,57 @@
+$spinner-width: 40px !default;
+$spinner-height: 40px !default;
+$spinner-stroke: $positive !default;
+
+.item-progress-spinner-container {
+  display: none;
+
+  .spinner {
+    height: 100%;
+    width: 100%;
+    display: block;
+    stroke: $spinner-stroke;
+  }
+
+  .item-progress-spinner-message {
+    margin: 0;
+  }
+}
+
+.platform-default,
+.platform-ios {
+  .item-progress-spinner-container {
+    display: block;
+    position: fixed;
+    height: 28px;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    margin: 16px 0;
+
+    &.item-progress-spinner-static {
+      position: static;
+      margin-top: 32px;
+    }
+
+    svg {
+      height: 28px;
+      width: 28px;
+    }
+  }
+}
+
+.platform-android {
+  .item-progress-spinner-container {
+    display: block;
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    top: calc(50% - 20px);
+
+    &.item-progress-spinner-static {
+      position: static;
+      margin: 8px 0;
+    }
+  }
+}

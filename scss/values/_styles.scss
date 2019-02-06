@@ -1,0 +1,37 @@
+.nav-bar-has-subheader {
+  .bar {
+    background-image: none;
+  }
+
+  .bar-header {
+    border-width: 0;
+  }
+}
+
+.nav-bar-title > img {
+  height: 32px;
+  margin: 12px 0px;
+}
+
+.item {
+  &.has-subtitle {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    p {
+      margin: 0 0 1px 0;
+    }
+  }
+}
+
+.platform-ios {
+  .item-header-modal {
+    .buttons {
+      margin-left: 2px;
+    }
+  }
+}
+
+.item-divider {
+  min-height: 28px;
+}

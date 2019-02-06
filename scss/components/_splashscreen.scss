@@ -1,0 +1,16 @@
+$splashscreen-backdrop-bg-active: #ffffff !default;
+
+.backdrop-splashscreen {
+  background-color: $splashscreen-backdrop-bg-active;
+  opacity: 1;
+}
+
+.splashscreen-container {
+  position: fixed;
+  z-index: 6;
+  right: calc(50% - 20px);
+  bottom: calc(50% - 20px);
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+}

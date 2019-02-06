@@ -1,0 +1,28 @@
+{
+  "dist": "./www/",
+  "vendors": [
+    "./node_modules/ionic-bower/js/ionic.bundle.min.js"
+  ],
+  "scss": [
+    "./src/global.scss",
+    "./src/*.scss",
+    "./src/**/*.scss",
+    "./scss/**/*.scss"
+  ],
+  "scripts": [
+    "./src/app/app.module.js",
+    "./src/**/*module*.js",
+    "./src/**/*.js",
+    "!./src/**/*.spec.js",
+    ".tpl/templates.js"
+  ],
+  "tests": "./src/**/*.spec.js",
+  "templates": [
+    "!./src/index.html",
+    "./src/**/*.html"
+  ],
+  "static": [
+    "./src/index.html",
+    "./src/assets/**/*"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Starter",
+  "short_name": "Starter",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "assets/img/appicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#2684FF",
+  "theme_color": "#2684FF"
+}

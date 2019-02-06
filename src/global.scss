@@ -1,0 +1,16 @@
+// App Global CSS
+// ----------------------------------------------------------------------------
+// Put style rules here that you want to apply globally. These styles are for
+// the entire app and not just one component. Additionally, this file can be
+// also used as an entry point to import other Sass files to be included in the
+// output CSS.
+
+/* To easily create custom color palettes for your app’s UI  */
+@import "theme/variables";
+
+/* Core CSS required for Ionic components to work properly */
+@import "../scss/main";
+
+/* Optional CSS utils that can be commented out */
+@import "pages/page-home/home.scss";
+@import "pages/page-list/list.scss";

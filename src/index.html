@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Starter</title>
+
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+
+  <link rel="icon" type="image/png" href="assets/img/appicon.png" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#0080ff" />
+
+  <!-- add to home screen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <!-- cordova.js required for cordova apps (remove if not needed) -->
+  <script src="cordova.js"></script>
+
+  <!-- The bundle is generated during the build process -->
+  <link rel="stylesheet" href="build/main.css" />
+</head>
+
+<body ng-app="app" ng-strict-di>
+  <!-- Ionic's root component and where the app will load -->
+  <ion-nav-view class="nav-bar-has-subheader"></ion-nav-view>
+
+  <!--
+      The polyfills js is generated during the build process
+      <script src="build/polyfills.js"></script>
+    -->
+
+  <!--
+      The vendor js is generated during the build process
+      It contains all of the dependencies in node_modules
+    -->
+  <script src="build/vendor.js"></script>
+
+  <!-- The main bundle js is generated during the build process -->
+  <script src="build/main.js"></script>
+</body>
+
+</html>

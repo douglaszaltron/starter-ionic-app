@@ -1,0 +1,16 @@
+{
+  "workbench.colorTheme": "Dracula",
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "html.suggest.html5": true,
+  "breadcrumbs.enabled": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.packageManager": "yarn",
+  "javascript.format.enable": false,
+  "editor.formatOnSave": true,
+  "cSpell.language": "en,pt_BR",
+  "stylelint.enable": true
+}

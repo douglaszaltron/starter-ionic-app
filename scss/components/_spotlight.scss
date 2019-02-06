@@ -1,0 +1,85 @@
+.item-spotlight {
+  border-width: 0;
+  overflow: hidden;
+  margin: 20px 13px;
+  border-radius: 2px;
+  background-color: #fff;
+  padding: 0;
+  @include box-shadow(0 1px 3px rgba(0, 0, 0, 0.3));
+
+  .item-content {
+    padding: 0;
+  }
+
+  .item-spotlight-icon {
+    font-size: 42px;
+    text-align: center;
+
+    .icon {
+      position: relative;
+
+      .icon-position {
+        position: absolute;
+        right: -6px;
+        bottom: -6px;
+        font-size: 32px;
+      }
+    }
+  }
+
+  .item-spotlight-complex {
+    position: relative;
+    padding: 8px 16px 50px;
+  }
+
+  .item-spotlight-content {
+    position: relative;
+    padding: 8px 16px;
+  }
+
+  .item-spotlight-header {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.87);
+
+    .icon {
+      font-size: 32px;
+      position: relative;
+
+      .icon-position {
+        position: absolute;
+        right: -6px;
+        bottom: -6px;
+        font-size: 22px;
+      }
+    }
+  }
+
+  .item-spotlight-body {
+    font-size: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: rgba(0, 0, 0, 0.54);
+  }
+
+  .item-spotlight-line {
+    border-bottom: 1px solid darken($stable, 10%);
+  }
+
+  .item-spotlight-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 6px 16px 8px;
+
+    .button-clear,
+    .button-icon {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .item-spotlight-bottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+  }
+}

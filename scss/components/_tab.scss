@@ -1,0 +1,41 @@
+.tabs-icon-top .tab-item {
+  margin-top: 2px;
+
+  &.tab-item-active,
+  &.active,
+  &.activated {
+    font-size: 11px !important;
+    border-top-width: 0 !important;
+    margin-top: 0px !important;
+
+    .icon {
+      font-size: 25px;
+    }
+  }
+
+  .icon {
+    height: 28px;
+    font-size: 24px;
+    padding-top: 4px;
+  }
+}
+
+ion-tabs.tabs-striped.tabs-color-balanced .tab-item,
+ion-tabs.tabs-standard.tabs-color-balanced .tab-item,
+ion-tabs.tabs-striped.tabs-color-positive .tab-item,
+ion-tabs.tabs-standard.tabs-color-positive .tab-item {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+ion-tabs.tabs-shadow .tabs {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.keyboard-is-open .tabs-hide-keyboard-open .tabs {
+  display: none;
+}
+
+.keyboard-is-open .has-tabs {
+  bottom: 0;
+}

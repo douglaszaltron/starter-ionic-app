@@ -1,0 +1,22 @@
+.platform-android {
+  .item-header-modal {
+    .title-left {
+      left: 35px !important;
+    }
+  }
+}
+
+.modal-backdrop {
+  .modal-backdrop-bg {
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &.active {
+    .modal-backdrop-bg {
+      opacity: 0.5;
+    }
+  }
+}

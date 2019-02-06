@@ -1,0 +1,43 @@
+.platform-android {
+  .item-action-sheet {
+    .button {
+      display: block;
+      padding: 1px;
+      color: rgba(0, 0, 0, 0.87);
+      font-size: 16px;
+    }
+
+    .action-sheet-has-icons {
+      .button {
+        padding-left: 72px;
+      }
+
+      .icon {
+        color: rgba(0, 0, 0, 0.54);
+      }
+    }
+  }
+
+  .item-action-sheet-padding {
+    .action-sheet {
+      .button {
+        padding: 0 16px;
+      }
+    }
+  }
+}
+
+.platform-browser,
+.platform-ios {
+  .item-action-sheet {
+    .action-sheet-has-icons .icon {
+      display: none;
+    }
+  }
+}
+
+.action-sheet-backdrop {
+  &.active-remove {
+    display: none;
+  }
+}

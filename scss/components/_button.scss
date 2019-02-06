@@ -1,0 +1,121 @@
+$button-default: #d6d7d7 !default;
+
+.buttons-group {
+  .button + .button {
+    margin-left: 5px;
+  }
+}
+
+.button {
+  color: rgba(0, 0, 0, 0.54);
+  border-width: 0;
+
+  &.button-default {
+    @include button-style(
+      $button-default,
+      $button-default,
+      #c9caca,
+      #c9caca,
+      #212121
+    );
+    @include button-clear($button-default);
+    @include button-outline($button-default);
+  }
+
+  &.button-small {
+    padding: 0 8px;
+    line-height: inherit;
+    min-height: 30px;
+  }
+
+  &.button-medium {
+    min-height: 38px;
+    line-height: 38px;
+    vertical-align: middle;
+    white-space: nowrap;
+    letter-spacing: 0.01em;
+    padding: 0 12px;
+    font-size: 16px;
+  }
+
+  &.button-block {
+    min-width: 140px;
+    display: inline-block;
+  }
+
+  &.button-raised:not([disabled]) {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  }
+
+  &.button-rounded {
+    border-radius: 25px;
+  }
+
+  &.button-border {
+    border-width: 2px;
+  }
+
+  &.button-circled {
+    border-radius: 25px;
+    min-width: 48px;
+    min-height: 48px;
+    max-height: 50px;
+
+    &.icon:before,
+    .icon:before {
+      line-height: 47px;
+    }
+
+    &.button-small {
+      padding: 0 8px;
+      min-width: 30px;
+      min-height: 30px;
+      max-height: 30px;
+
+      &.icon:before,
+      .icon:before {
+        line-height: 27px;
+      }
+    }
+  }
+
+  &.button-icon-small {
+    &.button-icon:before {
+      font-size: 24px !important;
+    }
+  }
+
+  &.button-text-center {
+    text-align: center;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  &.button-text-right {
+    text-align: right;
+    padding-right: 16px;
+  }
+
+  &.button-text-left {
+    text-align: left;
+    padding-right: 16px;
+  }
+}
+
+.item-bar-floating-button {
+  .button {
+    &.button-full {
+      margin: 0;
+      height: 44px;
+      border-color: transparent;
+      background: none;
+      box-shadow: none;
+      font-size: 14px;
+    }
+
+    &.activated {
+      opacity: 0.3;
+      transition: opacity 0.1s;
+    }
+  }
+}

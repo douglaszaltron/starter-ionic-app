@@ -1,0 +1,22 @@
+{
+  "android": {
+    "release": {
+      "keystore": "",
+      "storePassword": "",
+      "alias": "",
+      "password": "",
+      "keystoreType": "jks"
+    }
+  },
+  "ios": {
+    "release": {
+      "codeSignIdentity": "iPhone Developer",
+      "provisioningProfile": "",
+      "developmentTeam": "",
+      "packageType": "development",
+      "buildFlag": [
+        "-UseModernBuildSystem=0"
+      ]
+    }
+  }
+}
